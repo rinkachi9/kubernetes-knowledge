@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "containers.container-lifecycle-hooks",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "containers"
+    ],
+    "aliases": [
+      "PostStart",
+      "PreStop",
+      "lifecycle hooks"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-lifecycle",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "container-lifecycle-hooks",
+      "type": "documentation",
+      "title": "Container Lifecycle Hooks",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/",
+      "verified": false
+    },
+    {
+      "key": "attach-handlers-to-container-lifecycle-events",
+      "type": "documentation",
+      "title": "Attach Handlers to Container Lifecycle Events",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/",
+      "verified": false
+    },
+    {
+      "key": "pod-termination",
+      "type": "documentation",
+      "title": "Pod termination",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "PreStop hook",
+      "anchor": "#the-two-hooks",
+      "definition": "A handler run before a container is terminated, inside the termination grace period."
+    },
+    {
+      "term": "At least once delivery",
+      "anchor": "#hook-delivery-guarantees",
+      "definition": "The guarantee that a hook may run more than once for an event, so handlers must be idempotent."
+    }
+  ],
+  "map": {
+    "group": "containers"
+  }
+}

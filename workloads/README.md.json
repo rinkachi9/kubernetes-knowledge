@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "workloads",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "workloads"
+    ]
+  },
+  "map": {
+    "group": "workloads"
+  }
+}

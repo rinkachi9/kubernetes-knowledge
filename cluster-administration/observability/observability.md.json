@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "cluster-administration.observability.observability",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "cluster-administration",
+      "observability"
+    ],
+    "aliases": [
+      "monitoring",
+      "three pillars"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.cluster-architecture-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "observability",
+      "type": "documentation",
+      "title": "Observability",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/observability/",
+      "verified": false
+    },
+    {
+      "key": "prometheus-documentation",
+      "type": "documentation",
+      "title": "Prometheus documentation",
+      "url": "https://prometheus.io/docs/introduction/overview/",
+      "verified": false
+    },
+    {
+      "key": "opentelemetry-documentation",
+      "type": "documentation",
+      "title": "OpenTelemetry documentation",
+      "url": "https://opentelemetry.io/docs/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-observability-tools-cloudzero",
+      "type": "website",
+      "title": "Kubernetes observability tools (CloudZero)",
+      "url": "https://www.cloudzero.com/blog/kubernetes-observability-tools/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Observability",
+      "anchor": "#definition",
+      "definition": "The ability to infer the internal state of a system from the metrics, logs, traces and events it emits."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

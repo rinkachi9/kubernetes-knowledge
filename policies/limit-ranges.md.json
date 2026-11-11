@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "policies.limit-ranges",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "policies"
+    ],
+    "aliases": [
+      "limitrange",
+      "default requests"
+    ]
+  },
+  "links": [
+    {
+      "to": "configuration.resource-management-for-pods-and-containers",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "limit-ranges",
+      "type": "documentation",
+      "title": "Limit Ranges",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/policy/limit-range/",
+      "verified": false
+    },
+    {
+      "key": "configure-default-memory-requests-and-limits-for-a-namespace",
+      "type": "documentation",
+      "title": "Configure Default Memory Requests and Limits for a Namespace",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/",
+      "verified": false
+    },
+    {
+      "key": "resource-quotas",
+      "type": "documentation",
+      "title": "Resource Quotas",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "LimitRange",
+      "anchor": "#what-a-limitrange-is",
+      "definition": "A namespaced policy that injects default requests and limits and enforces bounds at admission."
+    }
+  ],
+  "map": {
+    "group": "policies"
+  }
+}

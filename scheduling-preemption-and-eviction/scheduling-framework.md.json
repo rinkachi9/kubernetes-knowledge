@@ -1,0 +1,74 @@
+{
+  "node": {
+    "id": "scheduling-preemption-and-eviction.scheduling-framework",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 2,
+    "tags": [
+      "scheduling-preemption-and-eviction"
+    ],
+    "aliases": [
+      "scheduler plugins",
+      "extension points"
+    ]
+  },
+  "links": [
+    {
+      "to": "scheduling-preemption-and-eviction.kube-scheduler",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "scheduling-framework",
+      "type": "documentation",
+      "title": "Scheduling Framework",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/",
+      "verified": false
+    },
+    {
+      "key": "scheduler-configuration",
+      "type": "documentation",
+      "title": "Scheduler Configuration",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/scheduling/config/",
+      "verified": false
+    },
+    {
+      "key": "kep-624-scheduling-framework",
+      "type": "documentation",
+      "title": "KEP-624: Scheduling Framework",
+      "url": "https://github.com/kubernetes/enhancements/tree/master/keps/sig-scheduling/624-scheduling-framework",
+      "verified": false
+    },
+    {
+      "key": "scheduler-plugins",
+      "type": "website",
+      "title": "scheduler-plugins",
+      "url": "https://github.com/kubernetes-sigs/scheduler-plugins",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Scheduling cycle",
+      "anchor": "#framework-workflow",
+      "definition": "The serial phase that selects a node for a Pod."
+    },
+    {
+      "term": "Binding cycle",
+      "anchor": "#framework-workflow",
+      "definition": "The possibly concurrent phase that applies the scheduling decision."
+    },
+    {
+      "term": "Permit plugin",
+      "anchor": "#interfaces",
+      "definition": "A plugin that approves, denies or delays the binding of a Pod."
+    }
+  ],
+  "map": {
+    "group": "scheduling-preemption-and-eviction"
+  }
+}

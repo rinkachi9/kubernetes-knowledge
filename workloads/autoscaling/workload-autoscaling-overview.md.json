@@ -1,0 +1,62 @@
+{
+  "node": {
+    "id": "workloads.autoscaling.workload-autoscaling-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "workloads",
+      "autoscaling"
+    ],
+    "aliases": [
+      "autoscaling",
+      "hpa vs vpa"
+    ]
+  },
+  "links": [
+    {
+      "to": "configuration.resource-management-for-pods-and-containers",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "autoscaling-workloads",
+      "type": "documentation",
+      "title": "Autoscaling Workloads",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-autoscaler-project",
+      "type": "website",
+      "title": "Kubernetes autoscaler project",
+      "url": "https://github.com/kubernetes/autoscaler",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-vpa-pros-and-cons-best-practices",
+      "type": "website",
+      "title": "Kubernetes VPA: Pros and Cons & Best Practices",
+      "url": "https://www.kubecost.com/kubernetes-autoscaling/kubernetes-vpa/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Horizontal scaling",
+      "anchor": "#vpa-versus-hpa",
+      "definition": "Changing the number of Pod replicas."
+    },
+    {
+      "term": "Vertical scaling",
+      "anchor": "#vpa-versus-hpa",
+      "definition": "Changing the CPU and memory of existing Pod containers."
+    }
+  ],
+  "map": {
+    "group": "autoscaling"
+  }
+}

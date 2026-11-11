@@ -1,0 +1,56 @@
+{
+  "node": {
+    "id": "application-delivery.deployment-strategies.blue-green-deployment",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "application-delivery",
+      "deployment-strategies"
+    ],
+    "aliases": [
+      "blue green"
+    ]
+  },
+  "links": [
+    {
+      "to": "services-and-networking.services",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "bluegreendeployment",
+      "type": "website",
+      "title": "BlueGreenDeployment",
+      "url": "https://martinfowler.com/bliki/BlueGreenDeployment.html",
+      "verified": false
+    },
+    {
+      "key": "argo-rollouts-bluegreen-strategy",
+      "type": "documentation",
+      "title": "Argo Rollouts: BlueGreen strategy",
+      "url": "https://argoproj.github.io/argo-rollouts/features/bluegreen/",
+      "verified": false
+    },
+    {
+      "key": "service",
+      "type": "documentation",
+      "title": "Service",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/service/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Blue/green deployment",
+      "anchor": "#definition",
+      "definition": "Running two full environments and switching all traffic from the old to the new one at once."
+    }
+  ],
+  "map": {
+    "group": "deployment-strategies"
+  }
+}

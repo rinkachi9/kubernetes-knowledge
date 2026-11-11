@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "containers.container-technologies",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "containers",
+      "container-technologies"
+    ]
+  },
+  "map": {
+    "group": "container-technologies"
+  }
+}

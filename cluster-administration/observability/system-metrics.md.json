@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "cluster-administration.observability.system-metrics",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "cluster-administration",
+      "observability"
+    ],
+    "aliases": [
+      "/metrics",
+      "summary api",
+      "cadvisor"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-administration.observability.observability",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "metrics-for-kubernetes-system-components",
+      "type": "documentation",
+      "title": "Metrics For Kubernetes System Components",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/",
+      "verified": false
+    },
+    {
+      "key": "node-metrics-data",
+      "type": "documentation",
+      "title": "Node metrics data",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/instrumentation/node-metrics/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-metrics-reference",
+      "type": "documentation",
+      "title": "Kubernetes Metrics Reference",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/instrumentation/metrics/",
+      "verified": false
+    },
+    {
+      "key": "kube-state-metrics",
+      "type": "website",
+      "title": "kube-state-metrics",
+      "url": "https://github.com/kubernetes/kube-state-metrics",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Summary API",
+      "anchor": "#node-metrics-data",
+      "definition": "The kubelet API with node, volume, Pod and container statistics."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

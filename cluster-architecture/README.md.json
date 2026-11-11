@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "cluster-architecture",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "cluster-architecture"
+    ]
+  },
+  "map": {
+    "group": "cluster-architecture"
+  }
+}

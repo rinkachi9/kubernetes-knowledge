@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "workloads.autoscaling",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "workloads",
+      "autoscaling"
+    ]
+  },
+  "map": {
+    "group": "autoscaling"
+  }
+}

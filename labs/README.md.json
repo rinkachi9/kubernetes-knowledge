@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "labs",
+    "kind": "index",
+    "status": "draft",
+    "order": 17,
+    "tags": [
+      "labs"
+    ]
+  },
+  "map": {
+    "group": "labs"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "node": {
+    "id": "workloads.workload-management.deployments",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "workloads",
+      "workload-management"
+    ],
+    "aliases": [
+      "deployment controller",
+      "rolling update",
+      "rollout"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.workload-management.replicaset",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "workloads.pods.probes",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "deployments",
+      "type": "documentation",
+      "title": "Deployments",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "verified": false
+    },
+    {
+      "key": "performing-a-rolling-update",
+      "type": "documentation",
+      "title": "Performing a Rolling Update",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/",
+      "verified": false
+    },
+    {
+      "key": "kubectl-rollout",
+      "type": "documentation",
+      "title": "kubectl rollout",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Rollover",
+      "anchor": "#rollover-multiple-updates-in-flight",
+      "definition": "Replacing an in-progress rollout with a newer one by moving the half-scaled ReplicaSet to the old set."
+    },
+    {
+      "term": "Proportional scaling",
+      "anchor": "#proportional-scaling",
+      "definition": "Spreading additional replicas across the active ReplicaSets of a rollout in proportion to their size."
+    },
+    {
+      "term": "Progress deadline",
+      "anchor": "#deployment-status",
+      "definition": "The time after which a stalled rollout is reported with reason ProgressDeadlineExceeded."
+    }
+  ],
+  "map": {
+    "group": "workload-management"
+  }
+}

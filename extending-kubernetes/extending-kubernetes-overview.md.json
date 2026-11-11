@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "extending-kubernetes.extending-kubernetes-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "extending-kubernetes"
+    ],
+    "aliases": [
+      "extension points",
+      "webhooks",
+      "kubectl plugins"
+    ]
+  },
+  "links": [
+    {
+      "to": "overview.kubernetes-api",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "extending-kubernetes",
+      "type": "documentation",
+      "title": "Extending Kubernetes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/",
+      "verified": false
+    },
+    {
+      "key": "dynamic-admission-control",
+      "type": "documentation",
+      "title": "Dynamic Admission Control",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-api-aggregation-layer",
+      "type": "documentation",
+      "title": "Kubernetes API Aggregation Layer",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/",
+      "verified": false
+    },
+    {
+      "key": "device-plugins",
+      "type": "documentation",
+      "title": "Device Plugins",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Controller pattern",
+      "anchor": "#extension-patterns",
+      "definition": "A client of the API that reads spec, acts and writes status."
+    },
+    {
+      "term": "Webhook",
+      "anchor": "#extension-patterns",
+      "definition": "A remote service that Kubernetes calls as a client."
+    },
+    {
+      "term": "Binary plugin",
+      "anchor": "#extension-patterns",
+      "definition": "A program that the kubelet or kubectl executes, such as a CNI or CSI plugin."
+    }
+  ],
+  "map": {
+    "group": "extending-kubernetes"
+  }
+}

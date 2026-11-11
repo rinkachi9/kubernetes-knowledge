@@ -1,0 +1,63 @@
+{
+  "node": {
+    "id": "cluster-administration.observability.logging-architecture",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "cluster-administration",
+      "observability"
+    ],
+    "aliases": [
+      "cluster-level logging",
+      "log rotation"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-administration.observability.observability",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "logging-architecture",
+      "type": "documentation",
+      "title": "Logging Architecture",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/logging/",
+      "verified": false
+    },
+    {
+      "key": "fluent-bit-kubernetes-documentation",
+      "type": "documentation",
+      "title": "Fluent Bit Kubernetes documentation",
+      "url": "https://docs.fluentbit.io/manual/installation/kubernetes",
+      "verified": false
+    },
+    {
+      "key": "kubelet-configuration-v1beta1",
+      "type": "documentation",
+      "title": "Kubelet Configuration (v1beta1)",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Cluster-level logging",
+      "anchor": "#why-logs-need-their-own-storage",
+      "definition": "Storing logs in a backend whose lifecycle is independent of Pods and nodes."
+    },
+    {
+      "term": "Node logging agent",
+      "anchor": "#cluster-level-logging-architectures",
+      "definition": "A DaemonSet that collects container log files on each node and forwards them."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

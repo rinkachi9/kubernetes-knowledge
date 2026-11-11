@@ -1,0 +1,62 @@
+{
+  "node": {
+    "id": "containers.container-fundamentals",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "containers"
+    ],
+    "aliases": [
+      "container",
+      "container image"
+    ]
+  },
+  "sources": [
+    {
+      "key": "containers",
+      "type": "documentation",
+      "title": "Containers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/containers/",
+      "verified": false
+    },
+    {
+      "key": "open-container-initiative",
+      "type": "website",
+      "title": "Open Container Initiative",
+      "url": "https://opencontainers.org/",
+      "verified": false
+    },
+    {
+      "key": "namespaces-7",
+      "type": "documentation",
+      "title": "namespaces(7)",
+      "url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+      "verified": false
+    },
+    {
+      "key": "cgroups-7",
+      "type": "documentation",
+      "title": "cgroups(7)",
+      "url": "https://man7.org/linux/man-pages/man7/cgroups.7.html",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Container",
+      "anchor": "#what-a-container-is",
+      "definition": "An isolated process on a shared kernel, created from an immutable image, with namespaces and cgroups applied."
+    },
+    {
+      "term": "Immutability",
+      "anchor": "#container-images",
+      "definition": "The rule that running containers are never changed; a change means a new image and a new container."
+    }
+  ],
+  "map": {
+    "group": "containers"
+  }
+}

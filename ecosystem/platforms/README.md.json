@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "ecosystem.platforms",
+    "kind": "index",
+    "status": "draft",
+    "order": 1,
+    "tags": [
+      "ecosystem",
+      "platforms"
+    ]
+  },
+  "map": {
+    "group": "platforms"
+  }
+}

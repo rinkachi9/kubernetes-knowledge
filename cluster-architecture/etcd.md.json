@@ -1,0 +1,68 @@
+{
+  "node": {
+    "id": "cluster-architecture.etcd",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 3,
+    "tags": [
+      "cluster-architecture"
+    ],
+    "aliases": [
+      "raft",
+      "cluster store"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.control-plane",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "operating-etcd-clusters-for-kubernetes",
+      "type": "documentation",
+      "title": "Operating etcd clusters for Kubernetes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/",
+      "verified": false
+    },
+    {
+      "key": "etcd-documentation",
+      "type": "documentation",
+      "title": "etcd documentation",
+      "url": "https://etcd.io/docs/",
+      "verified": false
+    },
+    {
+      "key": "in-search-of-an-understandable-consensus-algorithm",
+      "type": "paper",
+      "title": "In Search of an Understandable Consensus Algorithm",
+      "url": "https://raft.github.io/raft.pdf",
+      "verified": false
+    },
+    {
+      "key": "etcd-faq",
+      "type": "documentation",
+      "title": "etcd FAQ",
+      "url": "https://etcd.io/docs/v3.5/faq/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Quorum",
+      "anchor": "#quorum-and-cluster-size",
+      "definition": "A majority of etcd members, floor(n/2)+1, that must agree before a write is committed."
+    },
+    {
+      "term": "Raft",
+      "anchor": "#consistency-through-raft",
+      "definition": "The leader based consensus algorithm etcd uses to replicate writes consistently."
+    }
+  ],
+  "map": {
+    "group": "cluster-architecture"
+  }
+}

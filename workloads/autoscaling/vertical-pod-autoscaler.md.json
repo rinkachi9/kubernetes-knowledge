@@ -1,0 +1,69 @@
+{
+  "node": {
+    "id": "workloads.autoscaling.vertical-pod-autoscaler",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 3,
+    "tags": [
+      "workloads",
+      "autoscaling"
+    ],
+    "aliases": [
+      "vpa"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.autoscaling.workload-autoscaling-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "vertical-pod-autoscaling",
+      "type": "documentation",
+      "title": "Vertical Pod Autoscaling",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/",
+      "verified": false
+    },
+    {
+      "key": "vertical-pod-autoscaler",
+      "type": "documentation",
+      "title": "Vertical Pod Autoscaler",
+      "url": "https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler",
+      "verified": false
+    },
+    {
+      "key": "resize-cpu-and-memory-resources-assigned-to-containers",
+      "type": "documentation",
+      "title": "Resize CPU and Memory Resources assigned to Containers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-vpa-pros-and-cons-best-practices",
+      "type": "website",
+      "title": "Kubernetes VPA: Pros and Cons & Best Practices",
+      "url": "https://www.kubecost.com/kubernetes-autoscaling/kubernetes-vpa/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "VPA Recommender",
+      "anchor": "#components",
+      "definition": "The VPA component that computes request recommendations from usage history and OOM events."
+    },
+    {
+      "term": "Recommendation mode",
+      "anchor": "#how-it-works",
+      "definition": "updateMode Off, in which VPA only writes recommendations into its status."
+    }
+  ],
+  "map": {
+    "group": "autoscaling"
+  }
+}

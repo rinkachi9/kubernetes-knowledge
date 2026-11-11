@@ -1,0 +1,78 @@
+{
+  "node": {
+    "id": "workloads.workload-management.jobs",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 5,
+    "tags": [
+      "workloads",
+      "workload-management"
+    ],
+    "aliases": [
+      "job",
+      "batch",
+      "indexed job",
+      "pod failure policy"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-lifecycle",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "jobs",
+      "type": "documentation",
+      "title": "Jobs",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/",
+      "verified": false
+    },
+    {
+      "key": "automatic-cleanup-for-finished-jobs",
+      "type": "documentation",
+      "title": "Automatic Cleanup for Finished Jobs",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/",
+      "verified": false
+    },
+    {
+      "key": "handling-retriable-and-non-retriable-pod-failures-with-pod-f",
+      "type": "documentation",
+      "title": "Handling retriable and non-retriable pod failures with Pod failure policy",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/job/pod-failure-policy/",
+      "verified": false
+    },
+    {
+      "key": "kueue",
+      "type": "documentation",
+      "title": "Kueue",
+      "url": "https://kueue.sigs.k8s.io/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Indexed Job",
+      "anchor": "#completion-mode",
+      "definition": "A Job whose Pods each get a completion index from 0 to completions-1."
+    },
+    {
+      "term": "Pod failure policy",
+      "anchor": "#pod-failure-policy",
+      "definition": "Rules that fail, ignore or count Pod failures based on exit codes and Pod conditions."
+    },
+    {
+      "term": "Success policy",
+      "anchor": "#success-policy",
+      "definition": "Rules that declare an Indexed Job succeeded before all indexes complete."
+    }
+  ],
+  "map": {
+    "group": "workload-management"
+  }
+}

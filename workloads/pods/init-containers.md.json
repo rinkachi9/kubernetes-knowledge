@@ -1,0 +1,59 @@
+{
+  "node": {
+    "id": "workloads.pods.init-containers",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "initContainers"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "workloads.pods.pod-lifecycle",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "init-containers",
+      "type": "documentation",
+      "title": "Init Containers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/init-containers/",
+      "verified": false
+    },
+    {
+      "key": "configure-pod-initialization",
+      "type": "documentation",
+      "title": "Configure Pod Initialization",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-initialization/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Init container",
+      "anchor": "#definition",
+      "definition": "A container that runs to completion, one after another, before the app containers of a Pod start."
+    },
+    {
+      "term": "Effective init request",
+      "anchor": "#resource-sharing-within-containers",
+      "definition": "The highest request of a resource among all init containers, used to size the Pod."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

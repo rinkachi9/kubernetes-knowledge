@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "workloads.pods",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "workloads",
+      "pods"
+    ]
+  },
+  "map": {
+    "group": "pods"
+  }
+}

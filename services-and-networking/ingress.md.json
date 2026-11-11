@@ -1,0 +1,74 @@
+{
+  "node": {
+    "id": "services-and-networking.ingress",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "services-and-networking"
+    ],
+    "aliases": [
+      "ingress controller",
+      "ingressclass"
+    ]
+  },
+  "links": [
+    {
+      "to": "services-and-networking.services",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ingress",
+      "type": "documentation",
+      "title": "Ingress",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/ingress/",
+      "verified": false
+    },
+    {
+      "key": "ingress-controllers",
+      "type": "documentation",
+      "title": "Ingress Controllers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/",
+      "verified": false
+    },
+    {
+      "key": "gateway-api",
+      "type": "documentation",
+      "title": "Gateway API",
+      "url": "https://gateway-api.sigs.k8s.io/",
+      "verified": false
+    },
+    {
+      "key": "cert-manager",
+      "type": "documentation",
+      "title": "cert-manager",
+      "url": "https://cert-manager.io/docs/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Ingress controller",
+      "anchor": "#prerequisites-for-using-ingress",
+      "definition": "The component that reads Ingress objects and configures a load balancer or proxy."
+    },
+    {
+      "term": "IngressClass",
+      "anchor": "#ingress-class",
+      "definition": "A resource that selects which Ingress controller handles an Ingress."
+    },
+    {
+      "term": "Path type",
+      "anchor": "#path-types",
+      "definition": "How an Ingress path is matched: Exact, Prefix or ImplementationSpecific."
+    }
+  ],
+  "map": {
+    "group": "services-and-networking"
+  }
+}

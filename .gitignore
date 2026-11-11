@@ -1,0 +1,46 @@
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+.history/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+.cache/
+
+# Local agent settings
+.claude/settings.local.json
+
+# Security material that must never be committed
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+id_rsa*
+id_ed25519*
+*.pcap
+*.pcapng
+*.cap
+samples/
+malware/
+loot/
+dumps/
+*.ovpn
+*.crt.private
+
+node_modules/
+
+# Original exports that notes are migrated from (not committed)
+_sources/

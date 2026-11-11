@@ -1,0 +1,59 @@
+{
+  "node": {
+    "id": "services-and-networking.ip-address-ranges-and-dual-stack",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "services-and-networking"
+    ],
+    "aliases": [
+      "pod cidr",
+      "service cidr",
+      "dual-stack"
+    ]
+  },
+  "links": [
+    {
+      "to": "services-and-networking.kubernetes-network-model",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cluster-networking",
+      "type": "documentation",
+      "title": "Cluster Networking",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/networking/",
+      "verified": false
+    },
+    {
+      "key": "ipv4-ipv6-dual-stack",
+      "type": "documentation",
+      "title": "IPv4/IPv6 dual-stack",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/dual-stack/",
+      "verified": false
+    },
+    {
+      "key": "service-clusterip-allocation",
+      "type": "documentation",
+      "title": "Service ClusterIP allocation",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Dual-stack cluster",
+      "anchor": "#cluster-networking-types",
+      "definition": "A cluster in which Pods, Services and nodes get both IPv4 and IPv6 addresses."
+    }
+  ],
+  "map": {
+    "group": "services-and-networking"
+  }
+}

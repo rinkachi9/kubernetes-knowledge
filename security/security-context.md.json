@@ -1,0 +1,78 @@
+{
+  "node": {
+    "id": "security.security-context",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "security"
+    ],
+    "aliases": [
+      "securityContext",
+      "capabilities",
+      "seccomp",
+      "procMount"
+    ]
+  },
+  "links": [
+    {
+      "to": "security.security-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "configure-a-security-context-for-a-pod-or-container",
+      "type": "documentation",
+      "title": "Configure a Security Context for a Pod or Container",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
+      "verified": false
+    },
+    {
+      "key": "pod-security-standards",
+      "type": "documentation",
+      "title": "Pod Security Standards",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/",
+      "verified": false
+    },
+    {
+      "key": "linux-kernel-security-constraints-for-pods-and-containers",
+      "type": "documentation",
+      "title": "Linux kernel security constraints for Pods and containers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/linux-kernel-security-constraints/",
+      "verified": false
+    },
+    {
+      "key": "restrict-a-container-s-syscalls-with-seccomp",
+      "type": "documentation",
+      "title": "Restrict a Container's Syscalls with seccomp",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tutorials/security/seccomp/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Security context",
+      "anchor": "#what-a-security-context-controls",
+      "definition": "Privilege and access control settings for a Pod or container."
+    },
+    {
+      "term": "allowPrivilegeEscalation",
+      "anchor": "#what-a-security-context-controls",
+      "definition": "The setting that controls the no_new_privs flag of the container process."
+    },
+    {
+      "term": "fsGroupChangePolicy",
+      "anchor": "#pod-level-security-context",
+      "definition": "How Kubernetes changes volume ownership to fsGroup: OnRootMismatch or Always."
+    }
+  ],
+  "map": {
+    "group": "security"
+  }
+}

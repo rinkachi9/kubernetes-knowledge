@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "cluster-architecture.control-plane",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "cluster-architecture"
+    ],
+    "aliases": [
+      "master components",
+      "kube-apiserver",
+      "kube-controller-manager",
+      "cloud-controller-manager"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.cluster-architecture-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "kubernetes-components",
+      "type": "documentation",
+      "title": "Kubernetes Components",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/",
+      "verified": false
+    },
+    {
+      "key": "controllers",
+      "type": "documentation",
+      "title": "Controllers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/architecture/controller/",
+      "verified": false
+    },
+    {
+      "key": "cloud-controller-manager",
+      "type": "documentation",
+      "title": "Cloud Controller Manager",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/architecture/cloud-controller/",
+      "verified": false
+    },
+    {
+      "key": "leases",
+      "type": "documentation",
+      "title": "Leases",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/architecture/leases/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Controller",
+      "anchor": "#kube-controller-manager",
+      "definition": "A control loop that watches cluster state through the API server and acts to move it towards the desired state."
+    },
+    {
+      "term": "Cloud controller manager",
+      "anchor": "#cloud-controller-manager",
+      "definition": "The control plane component that runs cloud specific node, route and service controllers."
+    }
+  ],
+  "map": {
+    "group": "cluster-architecture"
+  }
+}

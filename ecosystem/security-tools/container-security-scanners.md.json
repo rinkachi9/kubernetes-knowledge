@@ -1,0 +1,76 @@
+{
+  "node": {
+    "id": "ecosystem.security-tools.container-security-scanners",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "ecosystem",
+      "security-tools"
+    ],
+    "aliases": [
+      "trivy",
+      "image scanning",
+      "cve"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.images",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "security.security-overview",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "trivy-documentation",
+      "type": "documentation",
+      "title": "Trivy documentation",
+      "url": "https://trivy.dev/",
+      "verified": false
+    },
+    {
+      "key": "grype",
+      "type": "website",
+      "title": "Grype",
+      "url": "https://github.com/anchore/grype",
+      "verified": false
+    },
+    {
+      "key": "openscap",
+      "type": "website",
+      "title": "OpenSCAP",
+      "url": "https://www.open-scap.org/",
+      "verified": false
+    },
+    {
+      "key": "kube-bench",
+      "type": "website",
+      "title": "kube-bench",
+      "url": "https://github.com/aquasecurity/kube-bench",
+      "verified": false
+    },
+    {
+      "key": "security-checklist",
+      "type": "documentation",
+      "title": "Security Checklist",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/security-checklist/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Image vulnerability scan",
+      "anchor": "#what-scanners-do",
+      "definition": "Matching the packages in an image against databases of known vulnerabilities."
+    }
+  ],
+  "map": {
+    "group": "security-tools"
+  }
+}

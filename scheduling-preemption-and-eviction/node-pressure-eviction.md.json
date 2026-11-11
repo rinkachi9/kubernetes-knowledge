@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "scheduling-preemption-and-eviction.node-pressure-eviction",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 6,
+    "tags": [
+      "scheduling-preemption-and-eviction"
+    ],
+    "aliases": [
+      "eviction thresholds",
+      "oom killer"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-quality-of-service-classes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "node-pressure-eviction",
+      "type": "documentation",
+      "title": "Node-pressure Eviction",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/",
+      "verified": false
+    },
+    {
+      "key": "reserve-compute-resources-for-system-daemons",
+      "type": "documentation",
+      "title": "Reserve Compute Resources for System Daemons",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/",
+      "verified": false
+    },
+    {
+      "key": "taming-the-oom-killer",
+      "type": "website",
+      "title": "Taming the OOM killer",
+      "url": "https://lwn.net/Articles/391222/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Eviction signal",
+      "anchor": "#eviction-signals-thresholds-and-monitoring-intervals",
+      "definition": "The current state of a node resource, such as memory.available, compared with a threshold."
+    },
+    {
+      "term": "Hard eviction threshold",
+      "anchor": "#eviction-signals-thresholds-and-monitoring-intervals",
+      "definition": "A threshold that makes the kubelet kill Pods immediately without grace."
+    },
+    {
+      "term": "oom_score_adj",
+      "anchor": "#node-out-of-memory-behavior",
+      "definition": "A per-container kernel value set from the QoS class that biases the OOM killer."
+    }
+  ],
+  "map": {
+    "group": "scheduling-preemption-and-eviction"
+  }
+}

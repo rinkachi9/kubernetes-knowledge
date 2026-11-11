@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "application-delivery.deployment-strategies.canary-deployment",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "application-delivery",
+      "deployment-strategies"
+    ],
+    "aliases": [
+      "canary release",
+      "progressive delivery"
+    ]
+  },
+  "links": [
+    {
+      "to": "application-delivery.deployment-strategies.rolling-updates",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "managing-workloads-canary-deployments",
+      "type": "documentation",
+      "title": "Managing Workloads: canary deployments",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/management/#canary-deployments",
+      "verified": false
+    },
+    {
+      "key": "use-a-canary-deployment-strategy-cloud-deploy",
+      "type": "documentation",
+      "title": "Use a canary deployment strategy (Cloud Deploy)",
+      "url": "https://cloud.google.com/deploy/docs/deployment-strategies/canary",
+      "verified": false
+    },
+    {
+      "key": "flagger",
+      "type": "website",
+      "title": "Flagger",
+      "url": "https://flagger.app/",
+      "verified": false
+    },
+    {
+      "key": "canary-release",
+      "type": "website",
+      "title": "Canary Release",
+      "url": "https://martinfowler.com/bliki/CanaryRelease.html",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Canary",
+      "anchor": "#definition",
+      "definition": "A new version exposed to a small, growing share of traffic before full rollout."
+    }
+  ],
+  "map": {
+    "group": "deployment-strategies"
+  }
+}

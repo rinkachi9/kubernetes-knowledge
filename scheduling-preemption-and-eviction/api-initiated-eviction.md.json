@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "scheduling-preemption-and-eviction.api-initiated-eviction",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 7,
+    "tags": [
+      "scheduling-preemption-and-eviction"
+    ],
+    "aliases": [
+      "eviction api",
+      "kubectl drain"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.disruptions",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "api-initiated-eviction",
+      "type": "documentation",
+      "title": "API-initiated Eviction",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/",
+      "verified": false
+    },
+    {
+      "key": "safely-drain-a-node",
+      "type": "documentation",
+      "title": "Safely Drain a Node",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/",
+      "verified": false
+    },
+    {
+      "key": "specifying-a-disruption-budget-for-your-application",
+      "type": "documentation",
+      "title": "Specifying a Disruption Budget for your Application",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/run-application/configure-pdb/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Eviction API",
+      "anchor": "#definition",
+      "definition": "The Pod eviction subresource that deletes a Pod only if PodDisruptionBudgets allow it."
+    }
+  ],
+  "map": {
+    "group": "scheduling-preemption-and-eviction"
+  }
+}

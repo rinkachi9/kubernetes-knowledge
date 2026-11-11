@@ -1,0 +1,85 @@
+{
+  "node": {
+    "id": "storage.volumes",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "storage"
+    ],
+    "aliases": [
+      "volume",
+      "emptyDir",
+      "hostPath",
+      "csi",
+      "mount propagation"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "volumes",
+      "type": "documentation",
+      "title": "Volumes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/storage/volumes/",
+      "verified": false
+    },
+    {
+      "key": "persistent-volumes",
+      "type": "documentation",
+      "title": "Persistent Volumes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
+      "verified": false
+    },
+    {
+      "key": "ephemeral-volumes",
+      "type": "documentation",
+      "title": "Ephemeral Volumes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/storage/ephemeral-volumes/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-csi-developer-documentation",
+      "type": "documentation",
+      "title": "Kubernetes CSI Developer Documentation",
+      "url": "https://kubernetes-csi.github.io/docs/",
+      "verified": false
+    },
+    {
+      "key": "container-storage-interface-specification",
+      "type": "standard",
+      "title": "Container Storage Interface specification",
+      "url": "https://github.com/container-storage-interface/spec",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Ephemeral volume",
+      "anchor": "#why-volumes-exist",
+      "definition": "A volume whose lifetime is bound to the Pod, such as emptyDir."
+    },
+    {
+      "term": "CSI",
+      "anchor": "#out-of-tree-volume-plugins",
+      "definition": "The Container Storage Interface, the standard way for storage vendors to plug into Kubernetes."
+    },
+    {
+      "term": "Mount propagation",
+      "anchor": "#mount-propagation",
+      "definition": "The setting that controls whether mounts made inside or outside a container become visible to the other side."
+    }
+  ],
+  "map": {
+    "group": "storage"
+  }
+}

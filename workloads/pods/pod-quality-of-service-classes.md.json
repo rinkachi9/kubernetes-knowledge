@@ -1,0 +1,61 @@
+{
+  "node": {
+    "id": "workloads.pods.pod-quality-of-service-classes",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 8,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "qos",
+      "Guaranteed",
+      "Burstable",
+      "BestEffort"
+    ]
+  },
+  "links": [
+    {
+      "to": "configuration.resource-management-for-pods-and-containers",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "pod-quality-of-service-classes",
+      "type": "documentation",
+      "title": "Pod Quality of Service Classes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/",
+      "verified": false
+    },
+    {
+      "key": "configure-quality-of-service-for-pods",
+      "type": "documentation",
+      "title": "Configure Quality of Service for Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/",
+      "verified": false
+    },
+    {
+      "key": "control-cpu-management-policies-on-the-node",
+      "type": "documentation",
+      "title": "Control CPU Management Policies on the Node",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/cpu-management-policies/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "QoS class",
+      "anchor": "#definition",
+      "definition": "The class Guaranteed, Burstable or BestEffort derived from a Pod's requests and limits, used for eviction ordering."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

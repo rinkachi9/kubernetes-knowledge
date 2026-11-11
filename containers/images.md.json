@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "containers.images",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "containers"
+    ],
+    "aliases": [
+      "container image",
+      "imagePullPolicy",
+      "image pull secrets"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "images",
+      "type": "documentation",
+      "title": "Images",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/containers/images/",
+      "verified": false
+    },
+    {
+      "key": "pull-an-image-from-a-private-registry",
+      "type": "documentation",
+      "title": "Pull an Image from a Private Registry",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/",
+      "verified": false
+    },
+    {
+      "key": "kubelet-image-credential-provider",
+      "type": "documentation",
+      "title": "Kubelet image credential provider",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/",
+      "verified": false
+    },
+    {
+      "key": "oci-distribution-specification",
+      "type": "standard",
+      "title": "OCI Distribution Specification",
+      "url": "https://github.com/opencontainers/distribution-spec",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Image pull policy",
+      "anchor": "#updating-images-and-the-image-pull-policy",
+      "definition": "The container field that controls when the kubelet pulls an image: IfNotPresent, Always or Never."
+    },
+    {
+      "term": "Image digest",
+      "anchor": "#what-an-image-is",
+      "definition": "The immutable content hash of an image manifest, written as sha256:..."
+    }
+  ],
+  "map": {
+    "group": "containers"
+  }
+}

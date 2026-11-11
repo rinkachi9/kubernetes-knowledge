@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "cluster-architecture.cluster-architecture-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "cluster-architecture"
+    ],
+    "aliases": [
+      "kubernetes architecture"
+    ]
+  },
+  "links": [
+    {
+      "to": "overview.what-is-kubernetes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "cluster-architecture",
+      "type": "documentation",
+      "title": "Cluster Architecture",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/architecture/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-components",
+      "type": "documentation",
+      "title": "Kubernetes Components",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/",
+      "verified": false
+    },
+    {
+      "key": "options-for-highly-available-topology",
+      "type": "documentation",
+      "title": "Options for Highly Available Topology",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Hub and spoke",
+      "anchor": "#hub-and-spoke",
+      "definition": "The design in which every component communicates only with the API server, which alone talks to etcd."
+    }
+  ],
+  "map": {
+    "group": "cluster-architecture"
+  }
+}

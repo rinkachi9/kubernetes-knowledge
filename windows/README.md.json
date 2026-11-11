@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "windows",
+    "kind": "index",
+    "status": "draft",
+    "order": 13,
+    "tags": [
+      "windows"
+    ]
+  },
+  "map": {
+    "group": "windows"
+  }
+}

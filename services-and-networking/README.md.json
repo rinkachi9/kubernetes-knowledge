@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "services-and-networking",
+    "kind": "index",
+    "status": "draft",
+    "order": 5,
+    "tags": [
+      "services-and-networking"
+    ]
+  },
+  "map": {
+    "group": "services-and-networking"
+  }
+}

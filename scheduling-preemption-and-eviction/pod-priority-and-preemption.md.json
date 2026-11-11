@@ -1,0 +1,68 @@
+{
+  "node": {
+    "id": "scheduling-preemption-and-eviction.pod-priority-and-preemption",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 5,
+    "tags": [
+      "scheduling-preemption-and-eviction"
+    ],
+    "aliases": [
+      "priorityclass",
+      "preemption"
+    ]
+  },
+  "links": [
+    {
+      "to": "scheduling-preemption-and-eviction.kube-scheduler",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "pod-priority-and-preemption",
+      "type": "documentation",
+      "title": "Pod Priority and Preemption",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/",
+      "verified": false
+    },
+    {
+      "key": "guaranteed-scheduling-for-critical-add-on-pods",
+      "type": "documentation",
+      "title": "Guaranteed Scheduling For Critical Add-On Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/guaranteed-scheduling-critical-addon-pods/",
+      "verified": false
+    },
+    {
+      "key": "limit-priority-class-consumption-by-default",
+      "type": "documentation",
+      "title": "Limit Priority Class consumption by default",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#limit-priority-class-consumption-by-default",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "PriorityClass",
+      "anchor": "#priorityclass",
+      "definition": "A cluster object that maps a name to an integer Pod priority."
+    },
+    {
+      "term": "Preemption",
+      "anchor": "#preemption",
+      "definition": "Evicting lower priority Pods so that a pending higher priority Pod can be scheduled."
+    },
+    {
+      "term": "Nominated node",
+      "anchor": "#preemption",
+      "definition": "The node recorded in status.nominatedNodeName where a preemptor waits for resources."
+    }
+  ],
+  "map": {
+    "group": "scheduling-preemption-and-eviction"
+  }
+}

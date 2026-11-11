@@ -1,0 +1,82 @@
+{
+  "node": {
+    "id": "security.security-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "security"
+    ],
+    "aliases": [
+      "kubernetes security",
+      "4c"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.cluster-architecture-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "services-and-networking.network-policies",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "security",
+      "type": "documentation",
+      "title": "Security",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/",
+      "verified": false
+    },
+    {
+      "key": "cloud-native-security-and-kubernetes",
+      "type": "documentation",
+      "title": "Cloud Native Security and Kubernetes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/cloud-native-security/",
+      "verified": false
+    },
+    {
+      "key": "security-checklist",
+      "type": "documentation",
+      "title": "Security Checklist",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/security-checklist/",
+      "verified": false
+    },
+    {
+      "key": "auditing",
+      "type": "documentation",
+      "title": "Auditing",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/",
+      "verified": false
+    },
+    {
+      "key": "cis-kubernetes-benchmark",
+      "type": "standard",
+      "title": "CIS Kubernetes Benchmark",
+      "url": "https://www.cisecurity.org/benchmark/kubernetes",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Control plane protection",
+      "anchor": "#control-plane-protection",
+      "definition": "Securing access to the API with TLS, authentication, authorization and admission, and encrypting stored data."
+    },
+    {
+      "term": "Audit log",
+      "anchor": "#auditing",
+      "definition": "A chronological record of actions performed through the Kubernetes API."
+    }
+  ],
+  "map": {
+    "group": "security"
+  }
+}

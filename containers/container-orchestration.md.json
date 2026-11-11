@@ -1,0 +1,62 @@
+{
+  "node": {
+    "id": "containers.container-orchestration",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "containers"
+    ],
+    "aliases": [
+      "orchestrator"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "overview",
+      "type": "documentation",
+      "title": "Overview",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/",
+      "verified": false
+    },
+    {
+      "key": "swarm-mode-overview",
+      "type": "documentation",
+      "title": "Swarm mode overview",
+      "url": "https://docs.docker.com/engine/swarm/",
+      "verified": false
+    },
+    {
+      "key": "nomad-documentation",
+      "type": "documentation",
+      "title": "Nomad documentation",
+      "url": "https://developer.hashicorp.com/nomad/docs",
+      "verified": false
+    },
+    {
+      "key": "large-scale-cluster-management-at-google-with-borg",
+      "type": "paper",
+      "title": "Large-scale cluster management at Google with Borg",
+      "url": "https://research.google/pubs/large-scale-cluster-management-at-google-with-borg/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Container orchestration",
+      "anchor": "#definition",
+      "definition": "Automated management of the lifecycle of containers across many hosts, including placement, scaling, networking and recovery."
+    }
+  ],
+  "map": {
+    "group": "containers"
+  }
+}

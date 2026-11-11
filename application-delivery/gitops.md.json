@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "application-delivery.gitops",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "application-delivery"
+    ],
+    "aliases": [
+      "flux",
+      "argo cd"
+    ]
+  },
+  "links": [
+    {
+      "to": "application-delivery.ci-cd-integration",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "opengitops-principles",
+      "type": "website",
+      "title": "OpenGitOps principles",
+      "url": "https://opengitops.dev/",
+      "verified": false
+    },
+    {
+      "key": "flux-documentation",
+      "type": "documentation",
+      "title": "Flux documentation",
+      "url": "https://fluxcd.io/flux/",
+      "verified": false
+    },
+    {
+      "key": "argo-cd-documentation",
+      "type": "documentation",
+      "title": "Argo CD documentation",
+      "url": "https://argo-cd.readthedocs.io/",
+      "verified": false
+    },
+    {
+      "key": "gitops-with-the-gitlab-agent-for-kubernetes",
+      "type": "documentation",
+      "title": "GitOps with the GitLab agent for Kubernetes",
+      "url": "https://docs.gitlab.com/user/clusters/agent/gitops/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "GitOps",
+      "anchor": "#definition",
+      "definition": "Operating systems from declarative, versioned state that an agent pulls and continuously reconciles."
+    },
+    {
+      "term": "Drift remediation",
+      "anchor": "#definition",
+      "definition": "Automatic correction of cluster changes that differ from the desired state in Git."
+    }
+  ],
+  "map": {
+    "group": "application-delivery"
+  }
+}

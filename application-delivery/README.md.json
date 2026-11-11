@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "application-delivery",
+    "kind": "index",
+    "status": "draft",
+    "order": 15,
+    "tags": [
+      "application-delivery"
+    ]
+  },
+  "map": {
+    "group": "application-delivery"
+  }
+}

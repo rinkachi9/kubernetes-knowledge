@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "ecosystem",
+    "kind": "index",
+    "status": "draft",
+    "order": 16,
+    "tags": [
+      "ecosystem"
+    ]
+  },
+  "map": {
+    "group": "ecosystem"
+  }
+}

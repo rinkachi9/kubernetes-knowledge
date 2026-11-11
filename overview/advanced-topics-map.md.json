@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "overview.advanced-topics-map",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 3,
+    "tags": [
+      "overview"
+    ],
+    "aliases": [
+      "advanced kubernetes"
+    ]
+  },
+  "links": [
+    {
+      "to": "overview.what-is-kubernetes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "extending-kubernetes",
+      "type": "documentation",
+      "title": "Extending Kubernetes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/",
+      "verified": false
+    },
+    {
+      "key": "operator-pattern",
+      "type": "documentation",
+      "title": "Operator pattern",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/",
+      "verified": false
+    },
+    {
+      "key": "multi-tenancy",
+      "type": "documentation",
+      "title": "Multi-tenancy",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/",
+      "verified": false
+    },
+    {
+      "key": "cncf-cloud-native-landscape",
+      "type": "website",
+      "title": "CNCF Cloud Native Landscape",
+      "url": "https://landscape.cncf.io/",
+      "verified": false
+    }
+  ],
+  "map": {
+    "group": "overview"
+  }
+}

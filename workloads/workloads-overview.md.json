@@ -1,0 +1,53 @@
+{
+  "node": {
+    "id": "workloads.workloads-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "workloads"
+    ],
+    "aliases": [
+      "workload resources"
+    ]
+  },
+  "links": [
+    {
+      "to": "overview.what-is-kubernetes",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "workloads",
+      "type": "documentation",
+      "title": "Workloads",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/",
+      "verified": false
+    },
+    {
+      "key": "workload-management",
+      "type": "documentation",
+      "title": "Workload Management",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Workload resource",
+      "anchor": "#workload-resources",
+      "definition": "An API object such as a Deployment whose controller keeps a set of Pods at a desired state."
+    }
+  ],
+  "map": {
+    "group": "workloads"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "workloads.workload-management.replicaset",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "workloads",
+      "workload-management"
+    ],
+    "aliases": [
+      "rs",
+      "pod-deletion-cost"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "replicaset",
+      "type": "documentation",
+      "title": "ReplicaSet",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
+      "verified": false
+    },
+    {
+      "key": "garbage-collection",
+      "type": "documentation",
+      "title": "Garbage Collection",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/architecture/garbage-collection/",
+      "verified": false
+    },
+    {
+      "key": "labels-and-selectors",
+      "type": "documentation",
+      "title": "Labels and Selectors",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Owner reference",
+      "anchor": "#how-it-works",
+      "definition": "Metadata on a Pod that names the controller owning it."
+    },
+    {
+      "term": "Pod deletion cost",
+      "anchor": "#management",
+      "definition": "An annotation that ranks which Pods a ReplicaSet deletes first on scale-down."
+    }
+  ],
+  "map": {
+    "group": "workload-management"
+  }
+}

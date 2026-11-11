@@ -1,0 +1,76 @@
+{
+  "node": {
+    "id": "cluster-architecture.node-components",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "cluster-architecture"
+    ],
+    "aliases": [
+      "kubelet",
+      "kube-proxy",
+      "container runtime"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.cluster-architecture-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "kubernetes-components",
+      "type": "documentation",
+      "title": "Kubernetes Components",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/#node-components",
+      "verified": false
+    },
+    {
+      "key": "kubelet",
+      "type": "documentation",
+      "title": "kubelet",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/",
+      "verified": false
+    },
+    {
+      "key": "virtual-ips-and-service-proxies",
+      "type": "documentation",
+      "title": "Virtual IPs and Service Proxies",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/networking/virtual-ips/",
+      "verified": false
+    },
+    {
+      "key": "container-runtime-interface-cri",
+      "type": "documentation",
+      "title": "Container Runtime Interface (CRI)",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/containers/cri/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "kubelet",
+      "anchor": "#kubelet",
+      "definition": "The node agent that makes sure the containers described in PodSpecs are running and healthy."
+    },
+    {
+      "term": "Container Runtime Interface",
+      "anchor": "#container-runtime",
+      "definition": "The gRPC API between the kubelet and a container runtime such as containerd or CRI-O."
+    }
+  ],
+  "map": {
+    "group": "cluster-architecture"
+  }
+}

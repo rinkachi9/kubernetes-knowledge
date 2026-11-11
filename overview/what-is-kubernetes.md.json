@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "overview.what-is-kubernetes",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "overview"
+    ],
+    "aliases": [
+      "k8s",
+      "container orchestration platform"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "overview",
+      "type": "documentation",
+      "title": "Overview",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/",
+      "verified": false
+    },
+    {
+      "key": "kubernetes-components",
+      "type": "documentation",
+      "title": "Kubernetes Components",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/components/",
+      "verified": false
+    },
+    {
+      "key": "don-t-panic-kubernetes-and-docker",
+      "type": "documentation",
+      "title": "Don't Panic: Kubernetes and Docker",
+      "publisher": "Kubernetes blog",
+      "url": "https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/",
+      "verified": false
+    },
+    {
+      "key": "borg-omega-and-kubernetes",
+      "type": "paper",
+      "title": "Borg, Omega, and Kubernetes",
+      "url": "https://queue.acm.org/detail.cfm?id=2898444",
+      "verified": false
+    },
+    {
+      "key": "what-is-kubernetes-red-hat",
+      "type": "website",
+      "title": "What is Kubernetes? (Red Hat)",
+      "url": "https://www.redhat.com/en/topics/containers/what-is-kubernetes",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Desired state",
+      "anchor": "#a-kubernetes-cluster",
+      "definition": "The configuration of workloads and resources that the control plane continuously drives the cluster towards."
+    },
+    {
+      "term": "Container deployment era",
+      "anchor": "#from-physical-servers-to-containers",
+      "definition": "Deploying applications as containers that share the host kernel, after physical and virtualized deployment."
+    }
+  ],
+  "map": {
+    "group": "overview"
+  }
+}

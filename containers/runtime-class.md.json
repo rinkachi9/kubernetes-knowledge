@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "containers.runtime-class",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 5,
+    "tags": [
+      "containers"
+    ],
+    "aliases": [
+      "RuntimeClass",
+      "sandboxed runtime"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.node-components",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "runtime-class",
+      "type": "documentation",
+      "title": "Runtime Class",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/containers/runtime-class/",
+      "verified": false
+    },
+    {
+      "key": "pod-overhead",
+      "type": "documentation",
+      "title": "Pod Overhead",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-overhead/",
+      "verified": false
+    },
+    {
+      "key": "gvisor-documentation",
+      "type": "documentation",
+      "title": "gVisor documentation",
+      "url": "https://gvisor.dev/docs/",
+      "verified": false
+    },
+    {
+      "key": "kata-containers-documentation",
+      "type": "documentation",
+      "title": "Kata Containers documentation",
+      "url": "https://katacontainers.io/docs/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "RuntimeClass handler",
+      "anchor": "#how-it-works",
+      "definition": "The name of a runtime configuration in the CRI runtime that a RuntimeClass selects."
+    }
+  ],
+  "map": {
+    "group": "containers"
+  }
+}

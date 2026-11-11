@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "cluster-administration.observability",
+    "kind": "index",
+    "status": "draft",
+    "order": 2,
+    "tags": [
+      "cluster-administration",
+      "observability"
+    ]
+  },
+  "map": {
+    "group": "observability"
+  }
+}

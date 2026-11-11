@@ -1,0 +1,78 @@
+{
+  "node": {
+    "id": "workloads.pods.pod-lifecycle",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "pod phase",
+      "crashloopbackoff",
+      "restartPolicy",
+      "readiness gates"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "pod-lifecycle",
+      "type": "documentation",
+      "title": "Pod Lifecycle",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/",
+      "verified": false
+    },
+    {
+      "key": "pod-conditions",
+      "type": "documentation",
+      "title": "Pod Conditions",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/",
+      "verified": false
+    },
+    {
+      "key": "debug-running-pods",
+      "type": "documentation",
+      "title": "Debug Running Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/",
+      "verified": false
+    },
+    {
+      "key": "kep-580-pod-readiness-gates",
+      "type": "documentation",
+      "title": "KEP-580: Pod readiness gates",
+      "url": "https://github.com/kubernetes/enhancements/tree/master/keps/sig-network/580-pod-readiness-gates",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Pod phase",
+      "anchor": "#pod-phase",
+      "definition": "A high level summary of a Pod's lifecycle: Pending, Running, Succeeded, Failed or Unknown."
+    },
+    {
+      "term": "CrashLoopBackOff",
+      "anchor": "#failure-management-and-crashloopbackoff",
+      "definition": "The waiting reason shown while the kubelet delays restarts of a repeatedly crashing container with exponential backoff."
+    },
+    {
+      "term": "Readiness gate",
+      "anchor": "#pod-readiness-and-readiness-gates",
+      "definition": "An extra Pod condition that must be True, in addition to container readiness, for the Pod to be Ready."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "node": {
+    "id": "application-delivery.ci-cd-integration",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "application-delivery"
+    ],
+    "aliases": [
+      "ci/cd",
+      "pipeline",
+      "push vs pull"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.workload-management.deployments",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "containers.images",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "deployments",
+      "type": "documentation",
+      "title": "Deployments",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "verified": false
+    },
+    {
+      "key": "managing-workloads",
+      "type": "documentation",
+      "title": "Managing Workloads",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/management/",
+      "verified": false
+    },
+    {
+      "key": "continuous-delivery",
+      "type": "website",
+      "title": "Continuous Delivery",
+      "url": "https://martinfowler.com/bliki/ContinuousDelivery.html",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Push model",
+      "anchor": "#push-and-pull-models",
+      "definition": "A pipeline applies changes to the cluster with its own credentials."
+    },
+    {
+      "term": "Pull model",
+      "anchor": "#push-and-pull-models",
+      "definition": "An agent in the cluster applies the desired state it pulls from Git or a registry."
+    }
+  ],
+  "map": {
+    "group": "application-delivery"
+  }
+}

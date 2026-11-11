@@ -1,0 +1,69 @@
+{
+  "node": {
+    "id": "cluster-administration.observability.system-traces",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 6,
+    "tags": [
+      "cluster-administration",
+      "observability"
+    ],
+    "aliases": [
+      "opentelemetry",
+      "otlp"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-administration.observability.observability",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "traces-for-kubernetes-system-components",
+      "type": "documentation",
+      "title": "Traces For Kubernetes System Components",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/system-traces/",
+      "verified": false
+    },
+    {
+      "key": "opentelemetry-documentation",
+      "type": "documentation",
+      "title": "OpenTelemetry documentation",
+      "url": "https://opentelemetry.io/docs/",
+      "verified": false
+    },
+    {
+      "key": "w3c-trace-context",
+      "type": "standard",
+      "title": "W3C Trace Context",
+      "url": "https://www.w3.org/TR/trace-context/",
+      "verified": false
+    },
+    {
+      "key": "jaeger-documentation",
+      "type": "documentation",
+      "title": "Jaeger documentation",
+      "url": "https://www.jaegertracing.io/docs/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Span",
+      "anchor": "#what-tracing-is",
+      "definition": "A timed unit of work in a trace."
+    },
+    {
+      "term": "OTLP",
+      "anchor": "#trace-collection",
+      "definition": "The OpenTelemetry Protocol used by components to export traces."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

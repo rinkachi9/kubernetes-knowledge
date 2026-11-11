@@ -1,0 +1,68 @@
+{
+  "node": {
+    "id": "application-delivery.packaging.helm",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "application-delivery",
+      "packaging"
+    ],
+    "aliases": [
+      "helm chart",
+      "helm release"
+    ]
+  },
+  "links": [
+    {
+      "to": "configuration.configuration-best-practices",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "helm-documentation",
+      "type": "documentation",
+      "title": "Helm documentation",
+      "url": "https://helm.sh/docs/",
+      "verified": false
+    },
+    {
+      "key": "chart-best-practices",
+      "type": "documentation",
+      "title": "Chart best practices",
+      "url": "https://helm.sh/docs/chart_best_practices/",
+      "verified": false
+    },
+    {
+      "key": "artifact-hub",
+      "type": "website",
+      "title": "Artifact Hub",
+      "url": "https://artifacthub.io/",
+      "verified": false
+    },
+    {
+      "key": "kustomize",
+      "type": "website",
+      "title": "Kustomize",
+      "url": "https://kustomize.io/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Chart",
+      "anchor": "#definition",
+      "definition": "A Helm package of templated manifests, default values and metadata."
+    },
+    {
+      "term": "Release",
+      "anchor": "#definition",
+      "definition": "An installed instance of a chart with its revision history."
+    }
+  ],
+  "map": {
+    "group": "packaging"
+  }
+}

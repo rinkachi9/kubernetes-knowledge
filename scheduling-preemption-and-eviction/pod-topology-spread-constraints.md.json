@@ -1,0 +1,74 @@
+{
+  "node": {
+    "id": "scheduling-preemption-and-eviction.pod-topology-spread-constraints",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 4,
+    "tags": [
+      "scheduling-preemption-and-eviction"
+    ],
+    "aliases": [
+      "topologySpreadConstraints",
+      "maxSkew"
+    ]
+  },
+  "links": [
+    {
+      "to": "scheduling-preemption-and-eviction.kube-scheduler",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "workloads.pods.disruptions",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "pod-topology-spread-constraints",
+      "type": "documentation",
+      "title": "Pod Topology Spread Constraints",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/",
+      "verified": false
+    },
+    {
+      "key": "assigning-pods-to-nodes",
+      "type": "documentation",
+      "title": "Assigning Pods to Nodes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/",
+      "verified": false
+    },
+    {
+      "key": "well-known-labels-annotations-and-taints",
+      "type": "documentation",
+      "title": "Well-Known Labels, Annotations and Taints",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/labels-annotations-taints/",
+      "verified": false
+    },
+    {
+      "key": "descheduler",
+      "type": "website",
+      "title": "Descheduler",
+      "url": "https://github.com/kubernetes-sigs/descheduler",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "maxSkew",
+      "anchor": "#the-topologyspreadconstraints-field",
+      "definition": "The maximum allowed difference in matching Pods between topology domains."
+    },
+    {
+      "term": "Topology domain",
+      "anchor": "#the-topologyspreadconstraints-field",
+      "definition": "All nodes sharing the same value of the topologyKey label."
+    }
+  ],
+  "map": {
+    "group": "scheduling-preemption-and-eviction"
+  }
+}

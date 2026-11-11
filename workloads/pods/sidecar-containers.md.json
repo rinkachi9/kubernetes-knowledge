@@ -1,0 +1,50 @@
+{
+  "node": {
+    "id": "workloads.pods.sidecar-containers",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "native sidecar",
+      "restartable init container"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.init-containers",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "sidecar-containers",
+      "type": "documentation",
+      "title": "Sidecar Containers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/",
+      "verified": false
+    },
+    {
+      "key": "kep-753-sidecar-containers",
+      "type": "documentation",
+      "title": "KEP-753: Sidecar containers",
+      "url": "https://github.com/kubernetes/enhancements/tree/master/keps/sig-node/753-sidecar-containers",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Native sidecar",
+      "anchor": "#definition",
+      "definition": "An init container with restartPolicy Always that keeps running for the life of the Pod."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

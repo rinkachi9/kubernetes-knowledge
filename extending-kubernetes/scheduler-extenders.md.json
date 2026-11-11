@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "extending-kubernetes.scheduler-extenders",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 3,
+    "tags": [
+      "extending-kubernetes"
+    ],
+    "aliases": [
+      "scheduler extender",
+      "multiple schedulers"
+    ]
+  },
+  "links": [
+    {
+      "to": "scheduling-preemption-and-eviction.scheduling-framework",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "scheduler-extender-design",
+      "type": "website",
+      "title": "Scheduler extender design",
+      "url": "https://github.com/kubernetes/design-proposals-archive/blob/main/scheduling/scheduler_extender.md",
+      "verified": false
+    },
+    {
+      "key": "configure-multiple-schedulers",
+      "type": "documentation",
+      "title": "Configure Multiple Schedulers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/",
+      "verified": false
+    },
+    {
+      "key": "kube-scheduler-configuration-v1",
+      "type": "documentation",
+      "title": "kube-scheduler configuration (v1)",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/",
+      "verified": false
+    },
+    {
+      "key": "create-a-custom-kubernetes-scheduler-ibm-developer",
+      "type": "website",
+      "title": "Create a custom Kubernetes scheduler (IBM Developer)",
+      "url": "https://developer.ibm.com/articles/creating-a-custom-kube-scheduler/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Scheduler extender",
+      "anchor": "#the-options",
+      "definition": "A webhook that the default scheduler calls to filter and prioritize nodes."
+    }
+  ],
+  "map": {
+    "group": "extending-kubernetes"
+  }
+}

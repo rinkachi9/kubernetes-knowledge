@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "project": {
+    "name": "Kubernetes Knowledge",
+    "description": "A personal, expert level knowledge base about Kubernetes: architecture, workloads, networking, storage, configuration, security, scheduling, cluster administration, extension, application delivery and the ecosystem, organized by the Concepts section of the Kubernetes documentation.",
+    "language": "en"
+  },
+  "entryPoints": [
+    {
+      "path": "overview"
+    },
+    {
+      "path": "cluster-architecture"
+    },
+    {
+      "path": "containers"
+    },
+    {
+      "path": "workloads"
+    },
+    {
+      "path": "services-and-networking"
+    },
+    {
+      "path": "storage"
+    },
+    {
+      "path": "configuration"
+    },
+    {
+      "path": "security"
+    },
+    {
+      "path": "policies"
+    },
+    {
+      "path": "scheduling-preemption-and-eviction"
+    },
+    {
+      "path": "resource-management"
+    },
+    {
+      "path": "cluster-administration"
+    },
+    {
+      "path": "windows"
+    },
+    {
+      "path": "extending-kubernetes"
+    },
+    {
+      "path": "application-delivery"
+    },
+    {
+      "path": "ecosystem"
+    },
+    {
+      "path": "labs"
+    }
+  ],
+  "ignore": [
+    "_assets"
+  ],
+  "toc": {
+    "file": "ToC.md",
+    "check": true,
+    "descriptions": {
+    }
+  },
+  "rules": {
+    "requireSidecars": true,
+    "noLongDashes": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "node": {
+    "id": "ecosystem.platforms.managed-kubernetes-services",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "ecosystem",
+      "platforms"
+    ],
+    "aliases": [
+      "eks",
+      "gke",
+      "aks",
+      "managed kubernetes"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.cluster-architecture-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "amazon-eks-documentation",
+      "type": "documentation",
+      "title": "Amazon EKS documentation",
+      "url": "https://docs.aws.amazon.com/eks/",
+      "verified": false
+    },
+    {
+      "key": "google-kubernetes-engine-documentation",
+      "type": "documentation",
+      "title": "Google Kubernetes Engine documentation",
+      "url": "https://cloud.google.com/kubernetes-engine/docs",
+      "verified": false
+    },
+    {
+      "key": "azure-kubernetes-service-documentation",
+      "type": "documentation",
+      "title": "Azure Kubernetes Service documentation",
+      "url": "https://learn.microsoft.com/azure/aks/",
+      "verified": false
+    },
+    {
+      "key": "certified-kubernetes-software-conformance",
+      "type": "website",
+      "title": "Certified Kubernetes Software Conformance",
+      "url": "https://www.cncf.io/training/certification/software-conformance/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Managed Kubernetes",
+      "anchor": "#shared-responsibility",
+      "definition": "A service in which the provider runs the control plane and integrates the cluster with its cloud."
+    }
+  ],
+  "map": {
+    "group": "platforms"
+  }
+}

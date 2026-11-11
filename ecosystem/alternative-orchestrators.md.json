@@ -1,0 +1,55 @@
+{
+  "node": {
+    "id": "ecosystem.alternative-orchestrators",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "ecosystem"
+    ],
+    "aliases": [
+      "docker swarm",
+      "nomad"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-orchestration",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "swarm-mode-overview",
+      "type": "documentation",
+      "title": "Swarm mode overview",
+      "url": "https://docs.docker.com/engine/swarm/",
+      "verified": false
+    },
+    {
+      "key": "nomad-documentation",
+      "type": "documentation",
+      "title": "Nomad documentation",
+      "url": "https://developer.hashicorp.com/nomad/docs",
+      "verified": false
+    },
+    {
+      "key": "nomad-vs-kubernetes",
+      "type": "documentation",
+      "title": "Nomad vs. Kubernetes",
+      "url": "https://developer.hashicorp.com/nomad/docs/nomad-vs-kubernetes",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Swarm service",
+      "anchor": "#docker-swarm",
+      "definition": "The desired state of a containerized application in Docker Swarm, run as tasks."
+    }
+  ],
+  "map": {
+    "group": "ecosystem"
+  }
+}

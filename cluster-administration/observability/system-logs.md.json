@@ -1,0 +1,63 @@
+{
+  "node": {
+    "id": "cluster-administration.observability.system-logs",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "cluster-administration",
+      "observability"
+    ],
+    "aliases": [
+      "klog",
+      "structured logging",
+      "node log query"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-administration.observability.logging-architecture",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "system-logs",
+      "type": "documentation",
+      "title": "System Logs",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/system-logs/",
+      "verified": false
+    },
+    {
+      "key": "logging-conventions",
+      "type": "website",
+      "title": "Logging conventions",
+      "url": "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-instrumentation/logging.md",
+      "verified": false
+    },
+    {
+      "key": "klog",
+      "type": "website",
+      "title": "klog",
+      "url": "https://github.com/kubernetes/klog",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "klog",
+      "anchor": "#klog",
+      "definition": "The logging library of Kubernetes system components."
+    },
+    {
+      "term": "Structured logging",
+      "anchor": "#structured-logging",
+      "definition": "Log messages with a message plus key-value pairs for programmatic extraction."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

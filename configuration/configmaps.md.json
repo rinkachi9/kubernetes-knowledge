@@ -1,0 +1,61 @@
+{
+  "node": {
+    "id": "configuration.configmaps",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "configuration"
+    ],
+    "aliases": [
+      "configmap"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "configmaps",
+      "type": "documentation",
+      "title": "ConfigMaps",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+      "verified": false
+    },
+    {
+      "key": "configure-a-pod-to-use-a-configmap",
+      "type": "documentation",
+      "title": "Configure a Pod to Use a ConfigMap",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/",
+      "verified": false
+    },
+    {
+      "key": "kustomize-configmapgenerator",
+      "type": "documentation",
+      "title": "Kustomize configMapGenerator",
+      "url": "https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/configmapgenerator/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "ConfigMap",
+      "anchor": "#definition",
+      "definition": "An API object that stores non-confidential configuration as key-value pairs up to 1 MiB."
+    },
+    {
+      "term": "Immutable ConfigMap",
+      "anchor": "#immutable-configmaps",
+      "definition": "A ConfigMap whose data cannot change, which removes kubelet watches and accidental edits."
+    }
+  ],
+  "map": {
+    "group": "configuration"
+  }
+}

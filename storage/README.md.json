@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "storage",
+    "kind": "index",
+    "status": "draft",
+    "order": 6,
+    "tags": [
+      "storage"
+    ]
+  },
+  "map": {
+    "group": "storage"
+  }
+}

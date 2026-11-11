@@ -1,0 +1,50 @@
+{
+  "node": {
+    "id": "workloads.pods.ephemeral-containers",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "kubectl debug"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ephemeral-containers",
+      "type": "documentation",
+      "title": "Ephemeral Containers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/",
+      "verified": false
+    },
+    {
+      "key": "debug-running-pods",
+      "type": "documentation",
+      "title": "Debug Running Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Ephemeral container",
+      "anchor": "#what-makes-them-different",
+      "definition": "A temporary container added to a running Pod through the ephemeralcontainers subresource for debugging."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

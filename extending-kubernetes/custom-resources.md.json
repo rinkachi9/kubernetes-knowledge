@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "extending-kubernetes.custom-resources",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 2,
+    "tags": [
+      "extending-kubernetes"
+    ],
+    "aliases": [
+      "crd",
+      "customresourcedefinition",
+      "operator",
+      "aggregated api"
+    ]
+  },
+  "links": [
+    {
+      "to": "extending-kubernetes.extending-kubernetes-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "custom-resources",
+      "type": "documentation",
+      "title": "Custom Resources",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/",
+      "verified": false
+    },
+    {
+      "key": "extend-the-kubernetes-api-with-customresourcedefinitions",
+      "type": "documentation",
+      "title": "Extend the Kubernetes API with CustomResourceDefinitions",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/",
+      "verified": false
+    },
+    {
+      "key": "operator-pattern",
+      "type": "documentation",
+      "title": "Operator pattern",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/",
+      "verified": false
+    },
+    {
+      "key": "the-kubebuilder-book",
+      "type": "documentation",
+      "title": "The Kubebuilder Book",
+      "url": "https://book.kubebuilder.io/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Custom resource",
+      "anchor": "#custom-resources",
+      "definition": "An extension of the Kubernetes API with a new kind of object."
+    },
+    {
+      "term": "Operator pattern",
+      "anchor": "#custom-controllers-and-operators",
+      "definition": "Custom resources plus controllers that encode operational knowledge for an application."
+    },
+    {
+      "term": "Declarative API",
+      "anchor": "#declarative-and-imperative-apis",
+      "definition": "An API of small desired-state objects with CRUD operations, reconciled by controllers."
+    }
+  ],
+  "map": {
+    "group": "extending-kubernetes"
+  }
+}

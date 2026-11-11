@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "resource-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 11,
+    "tags": [
+      "resource-management"
+    ]
+  },
+  "map": {
+    "group": "resource-management"
+  }
+}

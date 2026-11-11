@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "application-delivery.deployment-strategies",
+    "kind": "index",
+    "status": "draft",
+    "order": 4,
+    "tags": [
+      "application-delivery",
+      "deployment-strategies"
+    ]
+  },
+  "map": {
+    "group": "deployment-strategies"
+  }
+}

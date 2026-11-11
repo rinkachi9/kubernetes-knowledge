@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "configuration.configuration-best-practices",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "configuration"
+    ],
+    "aliases": [
+      "naked pods",
+      "hostPort"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.workloads-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "configuration-best-practices",
+      "type": "documentation",
+      "title": "Configuration Best Practices",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/configuration/overview/",
+      "verified": false
+    },
+    {
+      "key": "recommended-labels",
+      "type": "documentation",
+      "title": "Recommended Labels",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/",
+      "verified": false
+    },
+    {
+      "key": "declarative-management-of-kubernetes-objects-using-configura",
+      "type": "documentation",
+      "title": "Declarative Management of Kubernetes Objects Using Configuration Files",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Naked Pod",
+      "anchor": "#naked-pods",
+      "definition": "A Pod not owned by any controller, which nothing recreates after failure."
+    }
+  ],
+  "map": {
+    "group": "configuration"
+  }
+}

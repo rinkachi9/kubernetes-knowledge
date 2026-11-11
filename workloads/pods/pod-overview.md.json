@@ -1,0 +1,55 @@
+{
+  "node": {
+    "id": "workloads.pods.pod-overview",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "pod"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "pods",
+      "type": "documentation",
+      "title": "Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/",
+      "verified": false
+    },
+    {
+      "key": "the-distributed-system-toolkit-patterns-for-composite-contai",
+      "type": "documentation",
+      "title": "The Distributed System ToolKit: Patterns for Composite Containers",
+      "publisher": "Kubernetes blog",
+      "url": "https://kubernetes.io/blog/2015/06/the-distributed-system-toolkit-patterns/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Pod",
+      "anchor": "#definition",
+      "definition": "The smallest deployable unit: one or more co-scheduled containers sharing network and storage."
+    },
+    {
+      "term": "Logical host",
+      "anchor": "#definition",
+      "definition": "The model of a Pod as one machine on which tightly coupled containers run together."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

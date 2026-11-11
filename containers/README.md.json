@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "containers",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "containers"
+    ]
+  },
+  "map": {
+    "group": "containers"
+  }
+}

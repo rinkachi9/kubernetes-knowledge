@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "cluster-administration",
+    "kind": "index",
+    "status": "draft",
+    "order": 12,
+    "tags": [
+      "cluster-administration"
+    ]
+  },
+  "map": {
+    "group": "cluster-administration"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "node": {
+    "id": "containers.container-technologies.lxc",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "containers",
+      "container-technologies"
+    ],
+    "aliases": [
+      "linux containers",
+      "system container"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "lxc-introduction",
+      "type": "website",
+      "title": "LXC introduction",
+      "url": "https://linuxcontainers.org/lxc/introduction/",
+      "verified": false
+    },
+    {
+      "key": "incus-documentation",
+      "type": "documentation",
+      "title": "Incus documentation",
+      "url": "https://linuxcontainers.org/incus/docs/main/",
+      "verified": false
+    },
+    {
+      "key": "docker-0-9-execution-drivers-and-libcontainer",
+      "type": "website",
+      "title": "Docker 0.9: execution drivers and libcontainer",
+      "url": "https://www.docker.com/blog/docker-0-9-introducing-execution-drivers-and-libcontainer/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "System container",
+      "anchor": "#system-containers-and-application-containers",
+      "definition": "A container that runs a full OS userland with an init system, like a lightweight VM."
+    }
+  ],
+  "map": {
+    "group": "container-technologies"
+  }
+}

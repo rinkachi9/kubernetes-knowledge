@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "workloads.autoscaling.horizontal-pod-autoscaler",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 2,
+    "tags": [
+      "workloads",
+      "autoscaling"
+    ],
+    "aliases": [
+      "hpa"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.autoscaling.workload-autoscaling-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "cluster-administration.observability.resource-metrics-pipeline",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "horizontal-pod-autoscaling",
+      "type": "documentation",
+      "title": "Horizontal Pod Autoscaling",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/",
+      "verified": false
+    },
+    {
+      "key": "horizontalpodautoscaler-walkthrough",
+      "type": "documentation",
+      "title": "HorizontalPodAutoscaler Walkthrough",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/",
+      "verified": false
+    },
+    {
+      "key": "keda",
+      "type": "website",
+      "title": "KEDA",
+      "url": "https://keda.sh/",
+      "verified": false
+    },
+    {
+      "key": "prometheus-adapter",
+      "type": "website",
+      "title": "Prometheus Adapter",
+      "url": "https://github.com/kubernetes-sigs/prometheus-adapter",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Desired replicas formula",
+      "anchor": "#algorithm-details",
+      "definition": "desiredReplicas = ceil(currentReplicas * currentMetric / desiredMetric), skipped within the tolerance."
+    },
+    {
+      "term": "Stabilization window",
+      "anchor": "#configurable-scaling-behavior",
+      "definition": "A period whose highest recommended scale is used for scale-down to prevent flapping."
+    }
+  ],
+  "map": {
+    "group": "autoscaling"
+  }
+}

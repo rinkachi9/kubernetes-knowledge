@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "ecosystem.platforms.kubernetes-distributions",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 2,
+    "tags": [
+      "ecosystem",
+      "platforms"
+    ],
+    "aliases": [
+      "openshift",
+      "rancher",
+      "k3s"
+    ]
+  },
+  "links": [
+    {
+      "to": "ecosystem.platforms.managed-kubernetes-services",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "red-hat-openshift-documentation",
+      "type": "documentation",
+      "title": "Red Hat OpenShift documentation",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/",
+      "verified": false
+    },
+    {
+      "key": "rancher-documentation",
+      "type": "documentation",
+      "title": "Rancher documentation",
+      "url": "https://ranchermanager.docs.rancher.com/",
+      "verified": false
+    },
+    {
+      "key": "k3s-documentation",
+      "type": "documentation",
+      "title": "K3s documentation",
+      "url": "https://docs.k3s.io/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Kubernetes distribution",
+      "anchor": "#summary",
+      "definition": "Upstream Kubernetes packaged with an installer, defaults, add-ons and lifecycle tooling."
+    }
+  ],
+  "map": {
+    "group": "platforms"
+  }
+}

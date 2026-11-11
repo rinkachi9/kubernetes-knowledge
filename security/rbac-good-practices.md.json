@@ -1,0 +1,76 @@
+{
+  "node": {
+    "id": "security.rbac-good-practices",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 2,
+    "tags": [
+      "security"
+    ],
+    "aliases": [
+      "rbac",
+      "privilege escalation",
+      "least privilege"
+    ]
+  },
+  "links": [
+    {
+      "to": "security.security-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "role-based-access-control-good-practices",
+      "type": "documentation",
+      "title": "Role Based Access Control Good Practices",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+      "verified": false
+    },
+    {
+      "key": "using-rbac-authorization",
+      "type": "documentation",
+      "title": "Using RBAC Authorization",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+      "verified": false
+    },
+    {
+      "key": "controlling-access-to-the-kubernetes-api",
+      "type": "documentation",
+      "title": "Controlling Access to the Kubernetes API",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/security/controlling-access/",
+      "verified": false
+    },
+    {
+      "key": "etcd-used-by-kubernetes-is-vulnerable-to-oom-attack",
+      "type": "website",
+      "title": "etcd used by Kubernetes is vulnerable to OOM attack",
+      "url": "https://github.com/kubernetes/kubernetes/issues/107325",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Least privilege",
+      "anchor": "#least-privilege",
+      "definition": "Granting only the permissions a subject needs, preferably per namespace."
+    },
+    {
+      "term": "system:masters",
+      "anchor": "#least-privilege",
+      "definition": "A group whose members bypass all RBAC checks."
+    },
+    {
+      "term": "Escalate and bind verbs",
+      "anchor": "#escalate-verb",
+      "definition": "RBAC verbs that let a user create roles or bindings with rights they do not hold."
+    }
+  ],
+  "map": {
+    "group": "security"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "configuration",
+    "kind": "index",
+    "status": "draft",
+    "order": 7,
+    "tags": [
+      "configuration"
+    ]
+  },
+  "map": {
+    "group": "configuration"
+  }
+}

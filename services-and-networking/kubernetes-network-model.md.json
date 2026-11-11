@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "services-and-networking.kubernetes-network-model",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "services-and-networking"
+    ],
+    "aliases": [
+      "pod networking",
+      "cni",
+      "ip-per-pod"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "services-load-balancing-and-networking",
+      "type": "documentation",
+      "title": "Services, Load Balancing, and Networking",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/",
+      "verified": false
+    },
+    {
+      "key": "cluster-networking",
+      "type": "documentation",
+      "title": "Cluster Networking",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/networking/",
+      "verified": false
+    },
+    {
+      "key": "cni-specification",
+      "type": "standard",
+      "title": "CNI specification",
+      "url": "https://github.com/containernetworking/cni/blob/main/SPEC.md",
+      "verified": false
+    },
+    {
+      "key": "cilium-documentation",
+      "type": "documentation",
+      "title": "Cilium documentation",
+      "url": "https://docs.cilium.io/",
+      "verified": false
+    },
+    {
+      "key": "calico-documentation",
+      "type": "documentation",
+      "title": "Calico documentation",
+      "url": "https://docs.tigera.io/calico/latest/about/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "IP-per-Pod",
+      "anchor": "#how-it-works",
+      "definition": "The rule that every Pod gets its own cluster-wide IP address."
+    },
+    {
+      "term": "CNI plugin",
+      "anchor": "#network-plugins-cni",
+      "definition": "A network plugin implementing the Container Network Interface that wires Pods into the cluster network."
+    }
+  ],
+  "map": {
+    "group": "services-and-networking"
+  }
+}

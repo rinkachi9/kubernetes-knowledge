@@ -1,0 +1,70 @@
+{
+  "node": {
+    "id": "workloads.pods.probes",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 6,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "liveness probe",
+      "readiness probe",
+      "startup probe",
+      "health checks"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-lifecycle",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "liveness-readiness-and-startup-probes",
+      "type": "documentation",
+      "title": "Liveness, Readiness, and Startup Probes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/",
+      "verified": false
+    },
+    {
+      "key": "configure-liveness-readiness-and-startup-probes",
+      "type": "documentation",
+      "title": "Configure Liveness, Readiness and Startup Probes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/",
+      "verified": false
+    },
+    {
+      "key": "grpc-health-checking-protocol",
+      "type": "documentation",
+      "title": "GRPC Health Checking Protocol",
+      "url": "https://github.com/grpc/grpc/blob/master/doc/health-checking.md",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Liveness probe",
+      "anchor": "#liveness-probe",
+      "definition": "A check whose repeated failure makes the kubelet restart the container."
+    },
+    {
+      "term": "Readiness probe",
+      "anchor": "#readiness-probe",
+      "definition": "A check whose failure removes the Pod from Service endpoints without a restart."
+    },
+    {
+      "term": "Startup probe",
+      "anchor": "#startup-probe",
+      "definition": "A check that holds back liveness and readiness probes until the application has started."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

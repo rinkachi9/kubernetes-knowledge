@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "ecosystem.security-tools",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "ecosystem",
+      "security-tools"
+    ]
+  },
+  "map": {
+    "group": "security-tools"
+  }
+}

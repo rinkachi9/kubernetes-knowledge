@@ -1,0 +1,73 @@
+{
+  "node": {
+    "id": "workloads.workload-management.statefulsets",
+    "kind": "note",
+    "status": "draft",
+    "level": "advanced",
+    "order": 3,
+    "tags": [
+      "workloads",
+      "workload-management"
+    ],
+    "aliases": [
+      "sts",
+      "stateful set",
+      "volumeClaimTemplates"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.workload-management.deployments",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "services-and-networking.services",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "storage.volumes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "statefulsets",
+      "type": "documentation",
+      "title": "StatefulSets",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+      "verified": false
+    },
+    {
+      "key": "statefulset-basics",
+      "type": "documentation",
+      "title": "StatefulSet Basics",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/",
+      "verified": false
+    },
+    {
+      "key": "run-a-replicated-stateful-application",
+      "type": "documentation",
+      "title": "Run a Replicated Stateful Application",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Sticky identity",
+      "anchor": "#pod-identity",
+      "definition": "The ordinal, stable DNS name and storage that a StatefulSet Pod keeps across rescheduling."
+    },
+    {
+      "term": "Forced rollback",
+      "anchor": "#forced-rollback",
+      "definition": "The manual repair of a stuck StatefulSet rollout by reverting the template and deleting broken Pods."
+    }
+  ],
+  "map": {
+    "group": "workload-management"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "node": {
+    "id": "containers.container-technologies.docker",
+    "kind": "note",
+    "status": "draft",
+    "level": "intro",
+    "order": 1,
+    "tags": [
+      "containers",
+      "container-technologies"
+    ],
+    "aliases": [
+      "docker engine",
+      "dockershim"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "docker-overview",
+      "type": "documentation",
+      "title": "Docker overview",
+      "url": "https://docs.docker.com/get-started/docker-overview/",
+      "verified": false
+    },
+    {
+      "key": "dockershim-removal-faq",
+      "type": "documentation",
+      "title": "Dockershim removal FAQ",
+      "publisher": "Kubernetes blog",
+      "url": "https://kubernetes.io/blog/2022/02/17/dockershim-faq/",
+      "verified": false
+    },
+    {
+      "key": "cri-dockerd",
+      "type": "website",
+      "title": "cri-dockerd",
+      "url": "https://github.com/Mirantis/cri-dockerd",
+      "verified": false
+    },
+    {
+      "key": "oci-image-format-specification",
+      "type": "standard",
+      "title": "OCI Image Format Specification",
+      "url": "https://github.com/opencontainers/image-spec",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Dockershim",
+      "anchor": "#docker-and-kubernetes-today",
+      "definition": "The built-in kubelet adapter for Docker Engine, removed in Kubernetes v1.24."
+    }
+  ],
+  "map": {
+    "group": "container-technologies"
+  }
+}

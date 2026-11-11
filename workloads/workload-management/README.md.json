@@ -1,0 +1,15 @@
+{
+  "node": {
+    "id": "workloads.workload-management",
+    "kind": "index",
+    "status": "draft",
+    "order": 3,
+    "tags": [
+      "workloads",
+      "workload-management"
+    ]
+  },
+  "map": {
+    "group": "workload-management"
+  }
+}

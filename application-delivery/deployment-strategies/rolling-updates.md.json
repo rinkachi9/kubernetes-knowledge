@@ -1,0 +1,60 @@
+{
+  "node": {
+    "id": "application-delivery.deployment-strategies.rolling-updates",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "application-delivery",
+      "deployment-strategies"
+    ],
+    "aliases": [
+      "rollingupdate",
+      "recreate",
+      "maxSurge",
+      "maxUnavailable"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.workload-management.deployments",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "deployments-strategy",
+      "type": "documentation",
+      "title": "Deployments: strategy",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy",
+      "verified": false
+    },
+    {
+      "key": "performing-a-rolling-update",
+      "type": "documentation",
+      "title": "Performing a Rolling Update",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/",
+      "verified": false
+    },
+    {
+      "key": "argo-rollouts",
+      "type": "website",
+      "title": "Argo Rollouts",
+      "url": "https://argoproj.github.io/rollouts/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Rolling update",
+      "anchor": "#definition",
+      "definition": "Replacing Pods gradually in small batches while the service stays available."
+    }
+  ],
+  "map": {
+    "group": "deployment-strategies"
+  }
+}

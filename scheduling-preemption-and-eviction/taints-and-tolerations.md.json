@@ -1,0 +1,69 @@
+{
+  "node": {
+    "id": "scheduling-preemption-and-eviction.taints-and-tolerations",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "scheduling-preemption-and-eviction"
+    ],
+    "aliases": [
+      "taint",
+      "toleration",
+      "NoExecute"
+    ]
+  },
+  "links": [
+    {
+      "to": "scheduling-preemption-and-eviction.kube-scheduler",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "taints-and-tolerations",
+      "type": "documentation",
+      "title": "Taints and Tolerations",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/",
+      "verified": false
+    },
+    {
+      "key": "assigning-pods-to-nodes",
+      "type": "documentation",
+      "title": "Assigning Pods to Nodes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/",
+      "verified": false
+    },
+    {
+      "key": "nodes",
+      "type": "documentation",
+      "title": "Nodes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/architecture/nodes/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Taint",
+      "anchor": "#definition",
+      "definition": "A node property that repels Pods without a matching toleration."
+    },
+    {
+      "term": "Toleration",
+      "anchor": "#definition",
+      "definition": "A Pod property that lets it be scheduled onto nodes with matching taints."
+    },
+    {
+      "term": "Taint based eviction",
+      "anchor": "#taint-based-evictions",
+      "definition": "Eviction of Pods from nodes that the node controller tainted NoExecute because of a condition."
+    }
+  ],
+  "map": {
+    "group": "scheduling-preemption-and-eviction"
+  }
+}

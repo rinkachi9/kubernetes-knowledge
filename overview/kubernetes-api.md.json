@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "overview.kubernetes-api",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 2,
+    "tags": [
+      "overview"
+    ],
+    "aliases": [
+      "kubernetes rest api",
+      "discovery api",
+      "openapi"
+    ]
+  },
+  "links": [
+    {
+      "to": "overview.what-is-kubernetes",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "the-kubernetes-api",
+      "type": "documentation",
+      "title": "The Kubernetes API",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/",
+      "verified": false
+    },
+    {
+      "key": "api-overview",
+      "type": "documentation",
+      "title": "API Overview",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/using-api/",
+      "verified": false
+    },
+    {
+      "key": "deprecated-api-migration-guide",
+      "type": "documentation",
+      "title": "Deprecated API Migration Guide",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+      "verified": false
+    },
+    {
+      "key": "kep-3352-aggregated-discovery",
+      "type": "documentation",
+      "title": "KEP-3352: Aggregated Discovery",
+      "url": "https://github.com/kubernetes/enhancements/tree/master/keps/sig-api-machinery/3352-aggregated-discovery",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Aggregated discovery",
+      "anchor": "#discovery-api",
+      "definition": "Publishing all groups and resources of a cluster through the two endpoints /api and /apis."
+    },
+    {
+      "term": "API group",
+      "anchor": "#api-groups-and-versioning",
+      "definition": "A named, independently versioned collection of related resources such as apps or batch."
+    }
+  ],
+  "map": {
+    "group": "overview"
+  }
+}

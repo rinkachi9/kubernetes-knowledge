@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "cluster-administration.observability.resource-metrics-pipeline",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 5,
+    "tags": [
+      "cluster-administration",
+      "observability"
+    ],
+    "aliases": [
+      "metrics-server",
+      "kubectl top",
+      "metrics.k8s.io"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-administration.observability.system-metrics",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "resource-metrics-pipeline",
+      "type": "documentation",
+      "title": "Resource metrics pipeline",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/",
+      "verified": false
+    },
+    {
+      "key": "tools-for-monitoring-resources",
+      "type": "documentation",
+      "title": "Tools for Monitoring Resources",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-usage-monitoring/",
+      "verified": false
+    },
+    {
+      "key": "metrics-server",
+      "type": "website",
+      "title": "metrics-server",
+      "url": "https://github.com/kubernetes-sigs/metrics-server",
+      "verified": false
+    },
+    {
+      "key": "openmetrics",
+      "type": "standard",
+      "title": "OpenMetrics",
+      "url": "https://openmetrics.io/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "metrics-server",
+      "anchor": "#resource-metrics-pipeline",
+      "definition": "The in-memory add-on that serves CPU and memory usage as metrics.k8s.io."
+    },
+    {
+      "term": "Full metrics pipeline",
+      "anchor": "#full-metrics-pipeline",
+      "definition": "A monitoring stack that exposes richer metrics through custom or external metrics APIs."
+    }
+  ],
+  "map": {
+    "group": "observability"
+  }
+}

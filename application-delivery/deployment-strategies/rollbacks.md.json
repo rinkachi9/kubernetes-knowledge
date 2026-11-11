@@ -1,0 +1,58 @@
+{
+  "node": {
+    "id": "application-delivery.deployment-strategies.rollbacks",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "application-delivery",
+      "deployment-strategies"
+    ],
+    "aliases": [
+      "rollout undo",
+      "revision history"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.workload-management.deployments",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "deployments-rolling-back",
+      "type": "documentation",
+      "title": "Deployments: rolling back",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment",
+      "verified": false
+    },
+    {
+      "key": "kubectl-rollout-undo",
+      "type": "documentation",
+      "title": "kubectl rollout undo",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/kubectl_rollout_undo/",
+      "verified": false
+    },
+    {
+      "key": "parallelchange",
+      "type": "website",
+      "title": "ParallelChange",
+      "url": "https://martinfowler.com/bliki/ParallelChange.html",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Revision",
+      "anchor": "#revisions",
+      "definition": "A recorded version of a workload's Pod template that can be restored."
+    }
+  ],
+  "map": {
+    "group": "deployment-strategies"
+  }
+}

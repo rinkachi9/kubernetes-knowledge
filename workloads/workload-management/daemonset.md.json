@@ -1,0 +1,63 @@
+{
+  "node": {
+    "id": "workloads.workload-management.daemonset",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "workloads",
+      "workload-management"
+    ],
+    "aliases": [
+      "ds",
+      "node agent"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.workloads-overview",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "scheduling-preemption-and-eviction.taints-and-tolerations",
+      "rel": "related"
+    }
+  ],
+  "sources": [
+    {
+      "key": "daemonset",
+      "type": "documentation",
+      "title": "DaemonSet",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+      "verified": false
+    },
+    {
+      "key": "perform-a-rolling-update-on-a-daemonset",
+      "type": "documentation",
+      "title": "Perform a Rolling Update on a DaemonSet",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/",
+      "verified": false
+    },
+    {
+      "key": "static-pods",
+      "type": "documentation",
+      "title": "Static Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "DaemonSet",
+      "anchor": "#definition",
+      "definition": "A workload resource that runs one copy of a Pod on every eligible node."
+    }
+  ],
+  "map": {
+    "group": "workload-management"
+  }
+}

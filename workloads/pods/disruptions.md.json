@@ -1,0 +1,65 @@
+{
+  "node": {
+    "id": "workloads.pods.disruptions",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 7,
+    "tags": [
+      "workloads",
+      "pods"
+    ],
+    "aliases": [
+      "pod disruption budget",
+      "pdb",
+      "DisruptionTarget"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-lifecycle",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "disruptions",
+      "type": "documentation",
+      "title": "Disruptions",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/disruptions/",
+      "verified": false
+    },
+    {
+      "key": "specifying-a-disruption-budget-for-your-application",
+      "type": "documentation",
+      "title": "Specifying a Disruption Budget for your Application",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/run-application/configure-pdb/",
+      "verified": false
+    },
+    {
+      "key": "safely-drain-a-node",
+      "type": "documentation",
+      "title": "Safely Drain a Node",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Voluntary disruption",
+      "anchor": "#involuntary-and-voluntary-disruptions",
+      "definition": "A deliberate action such as a drain or a Pod deletion that takes a Pod down."
+    },
+    {
+      "term": "PodDisruptionBudget",
+      "anchor": "#pod-disruption-budgets",
+      "definition": "An object that limits how many Pods of an application voluntary evictions may take down at once."
+    }
+  ],
+  "map": {
+    "group": "pods"
+  }
+}

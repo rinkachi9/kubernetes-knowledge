@@ -1,0 +1,90 @@
+{
+  "node": {
+    "id": "services-and-networking.services",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 3,
+    "tags": [
+      "services-and-networking"
+    ],
+    "aliases": [
+      "service",
+      "clusterip",
+      "nodeport",
+      "loadbalancer",
+      "headless service"
+    ]
+  },
+  "links": [
+    {
+      "to": "services-and-networking.kubernetes-network-model",
+      "rel": "prerequisite"
+    },
+    {
+      "to": "workloads.workload-management.deployments",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "service",
+      "type": "documentation",
+      "title": "Service",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/service/",
+      "verified": false
+    },
+    {
+      "key": "virtual-ips-and-service-proxies",
+      "type": "documentation",
+      "title": "Virtual IPs and Service Proxies",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/networking/virtual-ips/",
+      "verified": false
+    },
+    {
+      "key": "dns-for-services-and-pods",
+      "type": "documentation",
+      "title": "DNS for Services and Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/",
+      "verified": false
+    },
+    {
+      "key": "endpointslices",
+      "type": "documentation",
+      "title": "EndpointSlices",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/",
+      "verified": false
+    },
+    {
+      "key": "cve-2020-8554",
+      "type": "website",
+      "title": "CVE-2020-8554",
+      "url": "https://github.com/kubernetes/kubernetes/issues/97076",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Service",
+      "anchor": "#definition-and-motivation",
+      "definition": "A stable virtual IP and DNS name in front of a changing set of Pods."
+    },
+    {
+      "term": "Headless Service",
+      "anchor": "#headless-services",
+      "definition": "A Service with clusterIP None whose DNS name resolves directly to Pod IPs."
+    },
+    {
+      "term": "externalTrafficPolicy",
+      "anchor": "#traffic-policies",
+      "definition": "The field that chooses between cluster-wide and node-local routing of external traffic."
+    }
+  ],
+  "map": {
+    "group": "services-and-networking"
+  }
+}

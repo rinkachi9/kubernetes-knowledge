@@ -1,0 +1,71 @@
+{
+  "node": {
+    "id": "scheduling-preemption-and-eviction.kube-scheduler",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "scheduling-preemption-and-eviction"
+    ],
+    "aliases": [
+      "scheduler",
+      "filtering and scoring"
+    ]
+  },
+  "links": [
+    {
+      "to": "cluster-architecture.control-plane",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "kubernetes-scheduler",
+      "type": "documentation",
+      "title": "Kubernetes Scheduler",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/",
+      "verified": false
+    },
+    {
+      "key": "scheduler-configuration",
+      "type": "documentation",
+      "title": "Scheduler Configuration",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/scheduling/config/",
+      "verified": false
+    },
+    {
+      "key": "assigning-pods-to-nodes",
+      "type": "documentation",
+      "title": "Assigning Pods to Nodes",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/",
+      "verified": false
+    },
+    {
+      "key": "scheduler-performance-tuning",
+      "type": "documentation",
+      "title": "Scheduler Performance Tuning",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduler-perf-tuning/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Feasible node",
+      "anchor": "#kube-scheduler",
+      "definition": "A node that meets all scheduling requirements of a Pod."
+    },
+    {
+      "term": "Binding",
+      "anchor": "#node-selection-in-two-steps",
+      "definition": "Recording the scheduling decision by setting spec.nodeName."
+    }
+  ],
+  "map": {
+    "group": "scheduling-preemption-and-eviction"
+  }
+}

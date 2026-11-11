@@ -1,0 +1,57 @@
+{
+  "node": {
+    "id": "containers.container-environment",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "containers"
+    ],
+    "aliases": [
+      "service environment variables"
+    ]
+  },
+  "links": [
+    {
+      "to": "containers.container-fundamentals",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "container-environment",
+      "type": "documentation",
+      "title": "Container Environment",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/containers/container-environment/",
+      "verified": false
+    },
+    {
+      "key": "downward-api",
+      "type": "documentation",
+      "title": "Downward API",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/downward-api/",
+      "verified": false
+    },
+    {
+      "key": "dns-for-services-and-pods",
+      "type": "documentation",
+      "title": "DNS for Services and Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Service environment variables",
+      "anchor": "#cluster-information",
+      "definition": "Variables such as FOO_SERVICE_HOST injected for Services that existed when the container started."
+    }
+  ],
+  "map": {
+    "group": "containers"
+  }
+}

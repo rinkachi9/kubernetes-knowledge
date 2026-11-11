@@ -1,0 +1,76 @@
+{
+  "node": {
+    "id": "cluster-administration.node-autoscaling",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 1,
+    "tags": [
+      "cluster-administration"
+    ],
+    "aliases": [
+      "cluster autoscaler",
+      "karpenter",
+      "descheduler"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.autoscaling.workload-autoscaling-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "node-autoscaling",
+      "type": "documentation",
+      "title": "Node Autoscaling",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/",
+      "verified": false
+    },
+    {
+      "key": "cluster-autoscaler",
+      "type": "website",
+      "title": "Cluster Autoscaler",
+      "url": "https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler",
+      "verified": false
+    },
+    {
+      "key": "karpenter",
+      "type": "documentation",
+      "title": "Karpenter",
+      "url": "https://karpenter.sh/",
+      "verified": false
+    },
+    {
+      "key": "cluster-proportional-autoscaler",
+      "type": "website",
+      "title": "Cluster Proportional Autoscaler",
+      "url": "https://github.com/kubernetes-sigs/cluster-proportional-autoscaler",
+      "verified": false
+    },
+    {
+      "key": "cluster-proportional-vertical-autoscaler",
+      "type": "website",
+      "title": "Cluster Proportional Vertical Autoscaler",
+      "url": "https://github.com/kubernetes-sigs/cluster-proportional-vertical-autoscaler",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Cluster Autoscaler",
+      "anchor": "#cluster-autoscaler",
+      "definition": "A tool that adds nodes for unschedulable Pods and removes underused nodes."
+    },
+    {
+      "term": "Consolidation",
+      "anchor": "#cost-aware-multidimensional-scaling-with-karpenter",
+      "definition": "Replacing or removing nodes so that the same Pods run on cheaper capacity."
+    }
+  ],
+  "map": {
+    "group": "cluster-administration"
+  }
+}

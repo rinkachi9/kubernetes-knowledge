@@ -1,0 +1,14 @@
+{
+  "node": {
+    "id": "extending-kubernetes",
+    "kind": "index",
+    "status": "draft",
+    "order": 14,
+    "tags": [
+      "extending-kubernetes"
+    ]
+  },
+  "map": {
+    "group": "extending-kubernetes"
+  }
+}

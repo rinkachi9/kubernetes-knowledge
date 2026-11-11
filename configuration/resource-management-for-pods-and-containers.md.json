@@ -1,0 +1,77 @@
+{
+  "node": {
+    "id": "configuration.resource-management-for-pods-and-containers",
+    "kind": "note",
+    "status": "draft",
+    "level": "intermediate",
+    "order": 4,
+    "tags": [
+      "configuration"
+    ],
+    "aliases": [
+      "requests and limits",
+      "millicpu",
+      "extended resources"
+    ]
+  },
+  "links": [
+    {
+      "to": "workloads.pods.pod-overview",
+      "rel": "prerequisite"
+    }
+  ],
+  "sources": [
+    {
+      "key": "resource-management-for-pods-and-containers",
+      "type": "documentation",
+      "title": "Resource Management for Pods and Containers",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+      "verified": false
+    },
+    {
+      "key": "assign-memory-resources-to-containers-and-pods",
+      "type": "documentation",
+      "title": "Assign Memory Resources to Containers and Pods",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/",
+      "verified": false
+    },
+    {
+      "key": "reserve-compute-resources-for-system-daemons",
+      "type": "documentation",
+      "title": "Reserve Compute Resources for System Daemons",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/",
+      "verified": false
+    },
+    {
+      "key": "quantity",
+      "type": "documentation",
+      "title": "Quantity",
+      "publisher": "Kubernetes documentation",
+      "url": "https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/",
+      "verified": false
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Request",
+      "anchor": "#requests-and-limits",
+      "definition": "The amount of a resource the scheduler reserves for a container."
+    },
+    {
+      "term": "Limit",
+      "anchor": "#requests-and-limits",
+      "definition": "The maximum amount of a resource a container may use, enforced through cgroups."
+    },
+    {
+      "term": "Extended resource",
+      "anchor": "#extended-resources",
+      "definition": "A resource outside the kubernetes.io domain, such as a GPU, requested in whole units."
+    }
+  ],
+  "map": {
+    "group": "configuration"
+  }
+}
